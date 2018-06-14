@@ -1,22 +1,28 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class OccCsg < Formula
   desc "Simple but powerful CSG tool based on OpenCascade (OCE edition)"
-  homepage ""
+  homepage "https://github.com/miho/OCC-CSG"
   url "https://github.com/miho/OCC-CSG/archive/v0.9.1.tar.gz"
   sha256 "b4b7100f529ac33967a2b2c0f4a128c49319467edcd3e061ebcebcd8d438a245"
-  # depends_on "cmake" => :build
+  depends_on "cmake" => :build
+  depends_on "miho/homebrew-tap/oce-dep-for-occ-csg" => :build
+  depends_on "freetype"
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # Remove unrecognized options if warned by configure
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--prefix=#{prefix}"
-    # system "cmake", ".", *std_cmake_args
-    system "make", "install" # if this fails, try separate make/make install steps
+
+    system "cmake", ".",
+     "-DCMAKE_PREFIX_PATH=#{HOMEBREW_PREFIX}/Cellar/oce/0.18.3/OCE.framework/Versions/0.18/Resources/",
+     *std_cmake_args
+
+    system "make"
+
+    system "mkdir", "-p", "#{prefix}"
+    system "mkdir", "-p", "#{bin}"
+
+    system "cp", "-r", "bin", "#{prefix}"
+    system "cp",       "README.md", "#{prefix}"
+    system "cp",       "LICENSE", "#{prefix}"
+
+
   end
 
   test do
