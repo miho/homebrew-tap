@@ -1,4 +1,4 @@
-class Oce < Formula
+class OCEDepForOccCsg < Formula
   desc "Open CASCADE Community Edition: patches/improvements/experiments contributed by users over the official Open CASCADE library."
   homepage "http://groups.google.com/group/oce-dev"
   url "https://github.com/miho/oce/archive/OCE-0.18.3.tar.gz"
