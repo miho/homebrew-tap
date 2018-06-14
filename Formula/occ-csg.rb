@@ -28,4 +28,10 @@ class OccCsg < Formula
   test do
     system "occ-csg"
   end
+  
+  bottle do
+    sha256 "7b5189236948c4e6ec13e577ed60c054533c0921d75d624ebfbc5e9ba7d83c35" => :high_sierra
+  end
+  
+  
 end
