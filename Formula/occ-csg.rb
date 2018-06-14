@@ -26,7 +26,7 @@ class OccCsg < Formula
   end
 
   test do
-    system "occ-csg"
+    system "occ-csg", "--help"
   end
   
   bottle do
