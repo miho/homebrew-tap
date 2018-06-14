@@ -35,7 +35,7 @@ class OceDepForOccCsg < Formula
   end
   
   bottle do
-    root_url "https://github.com/miho/tap/releases/download/v0.1/"
+    root_url "https://dl.bintray.com/miho/Homebrew-Bottles/"
     sha256 "738eac65bfe1b9684d0f5a47b3c14d92e988a5be5e730a2d16700884bb46361d" => :high_sierra
   end
   
