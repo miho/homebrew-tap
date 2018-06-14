@@ -31,6 +31,7 @@ class OccCsg < Formula
   
   bottle do
     root_url "https://dl.bintray.com/miho/Homebrew-Bottles/"
+    sha256 "343dc64db760c00199b4b96684e7c1e1d27aca4579da4852fc72f580f9227e3c" => :sierra
     sha256 "7b5189236948c4e6ec13e577ed60c054533c0921d75d624ebfbc5e9ba7d83c35" => :high_sierra
   end
   
