@@ -30,6 +30,7 @@ class OccCsg < Formula
   end
   
   bottle do
+    root_url "https://github.com/miho/tap/releases/download/v0.1/"
     sha256 "7b5189236948c4e6ec13e577ed60c054533c0921d75d624ebfbc5e9ba7d83c35" => :high_sierra
   end
   
