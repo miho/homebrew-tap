@@ -10,7 +10,7 @@ class OccCsg < Formula
   def install
 
     system "cmake", ".",
-     "-DCMAKE_PREFIX_PATH=#{HOMEBREW_PREFIX}/Cellar/oce/0.18.3/OCE.framework/Versions/0.18/Resources/",
+     "-DCMAKE_PREFIX_PATH=#{HOMEBREW_PREFIX}/Cellar/oce-dep-for-occ-csg/0.18.3/OCE.framework/Versions/0.18/Resources/",
      *std_cmake_args
 
     system "make"
