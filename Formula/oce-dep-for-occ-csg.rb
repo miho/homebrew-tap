@@ -33,4 +33,9 @@ class OceDepForOccCsg < Formula
     # executables being tested: `system "#{bin}/program", "do", "something"`.
     system "false"
   end
+  
+  bottle do
+    sha256 "738eac65bfe1b9684d0f5a47b3c14d92e988a5be5e730a2d16700884bb46361d" => :high_sierra
+  end
+  
 end
