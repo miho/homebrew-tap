@@ -1,9 +1,6 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Rbdl < Formula
-  desc ""
-  homepage ""
+  desc "RBDL: an efficient rigid-body dynamics library using recursive algorithms"
+  homepage "https://bitbucket.org/rbdl/rbdl/src/default/"
   url "https://bitbucket.org/rbdl/rbdl/get/v2.6.0.tar.gz"
   sha256 "a73bfe37b7a86d954fdb57cc88cdc8e08d35a6799745dad395da491daaad504f"
   depends_on "cmake" => :build
@@ -15,6 +12,6 @@ class Rbdl < Formula
   end
 
   test do
-    system "false"
+    system "false" # how to test this library? sample code...
   end
 end
