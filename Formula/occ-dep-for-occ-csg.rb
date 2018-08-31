@@ -30,7 +30,8 @@ class OccDepForOccCsg < Formula
             "-DCMAKE_INSTALL_PREFIX=#{prefix}",
             "-DINSTALL_FREETYPE:BOOL=true",
             *std_cmake_args
-      system "make", "-j"      
+      # causes problems on old macs, thus we disable it for now
+      # system "make", "-j"      
       system "make", "install"
       system "cp", "#{prefix}/lib/libfreetype.a.6",
              "#{prefix}/lib/libfreetype.a"
