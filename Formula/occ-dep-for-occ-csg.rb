@@ -56,6 +56,9 @@ class OccDepForOccCsg < Formula
     #sha256 "e9c679292b803b2a664c0775e980f7fd17314854abf8607bbbb895fd98e16170" => :sierra
     rebuild 1
     sha256 "71f86c377e7716fc0cf2612b95a6cc5efa0d546a0d8ca6f5b7f3f2d3a1770b51" => :high_sierra
+    
+    rebuild 2
+    sha256 "065a9de2e138aec2d4af66d7db5d561dfc9817b620edea3d7345beb605e45c29" => :sierra
   end
   
 end
