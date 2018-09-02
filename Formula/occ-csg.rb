@@ -36,12 +36,7 @@ class OccCsg < Formula
     
     rebuild 1
     sha256 "fed3f775db8bb3a7393fd71bc88edb04f16f9a2857ecb83968d0fd36126d2630" => :sierra
-
-    #rebuild 1
-    #sha256 "f0b8e62c8ca29544ec862499cfe229cc595d8f80af5d6ef988ca4802e01e6a87" => :high_sierra
     
-    #rebuild 2
-    #sha256 "c473414e309fe692be625e9c1c72e80e72ffb7df58dd739bff1c83f3e1cb0ece" => :sierra
   end
   
   
