@@ -59,6 +59,9 @@ class OccDepForOccCsg < Formula
     
     rebuild 2
     sha256 "065a9de2e138aec2d4af66d7db5d561dfc9817b620edea3d7345beb605e45c29" => :sierra
+    
+    cellar :any_skip_relocation
+    sha256 "143310301cccb00c235995567a7c54970a4bd070a090976ff197c25f40255892" => :mojave
   end
   
 end
