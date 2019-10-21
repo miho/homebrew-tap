@@ -1,8 +1,8 @@
 class OccDepForOccCsg < Formula
   desc "Open CASCADE library"
   homepage "https://www.opencascade.com/content/overview"
-  url "https://github.com/miho/occ-for-occ-csg/archive/v7.3.0.2.tar.gz"
-  sha256 "264350eec0cfd3c8490168b84ee7750ccdbc2c36601e0ffff86f0743b7d3bb29"
+  url "https://github.com/miho/occ-for-occ-csg/archive/v7.4.0.tar.gz"
+  sha256 "0431fb9dc7be273416c418462a4194cb264dcf355a180c3d18f65e2a592485c9"
   depends_on "cmake" => :build
 
   keg_only :provided_by_macos
