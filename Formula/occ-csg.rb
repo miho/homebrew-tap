@@ -34,6 +34,10 @@ class OccCsg < Formula
     
     cellar :any_skip_relocation
     sha256 "dbdbc066bbf9bc2e04ee3372cde7fab6330956906761b51759e74ad058a49ed1" => :mojave  
+    
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "17b8f8765eaabb47af86f97d7be6be6e0fcab1041b12fcb61ec33aac39b2d44c" => :high_sierra
   end
   
   
