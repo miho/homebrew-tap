@@ -33,6 +33,7 @@ class OccCsg < Formula
     root_url "https://dl.bintray.com/miho/Homebrew-Bottles/"
     
     cellar :any_skip_relocation
+    rebuild 0
     sha256 "4dbf0c5e73756411e266a018039739d80faf2f6c11d155e895a986fa4ff9f9d7" => :mojave
     
     cellar :any_skip_relocation
