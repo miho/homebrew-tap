@@ -1,8 +1,8 @@
 class OccCsg < Formula
   desc "Simple but powerful CSG tool based on OpenCascade (OCE edition)"
   homepage "https://github.com/miho/OCC-CSG"
-  url "https://github.com/miho/OCC-CSG/archive/v0.9.7.tar.gz"
-  sha256 "52cc7369dc91da8a5d84576144f21e41795c1f29b7fefc909f84e989f7c036aa"
+  url "https://github.com/miho/OCC-CSG/archive/v0.9.8.tar.gz"
+  sha256 "d18203bb493ac9f0f3eb694eb606f327ec2d48428e9d48f4a87b8796b171cd10"
   depends_on "cmake" => :build
   depends_on "miho/homebrew-tap/occ-dep-for-occ-csg" => :build
   #depends_on "freetype"
